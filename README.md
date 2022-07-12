@@ -30,3 +30,26 @@ test.csv`データセットには同様の情報が含まれているが、各�
 train.csvのデータで見つけたパターンを使って、（test.csvで見つけた）他の乗客418人が生き延びたかどうかを予測しなさい。
 
 データ」タブで、データセットをさらに詳しく調べてみてください。競争力のあるモデルを作成したと感じたら、Kaggle に提出して、あなたのモデルが他の Kaggler に対してどのような地位にあるのかを確認します。
+
+## Data dictionary
+
+| Variable | Definition | Key |
+| ---- | ---- | ---- |
+| Survival | 生死 | 0=No, 1=Yes |
+| Pclass | チケットクラス | 1=1st, 2=2nd, 3=3rd |
+| Sex | 性別 | |
+| Age | 年齢 | |
+| SibSp | 兄弟/夫婦の人数 | |
+| Parch | 両親/子供の人数 | |
+| Ticket | チケット番号 | |
+| Fare | 旅客運賃 | |
+| Cabin | 客室番号 | |
+| Embarked | 乗船港 | C=Cherbourg, Q=Queenstown, S=Southampton |
+
+## Log
+
+### 20220712
+- Joined this competition.
+- Applied Random Forest Classifier as indicated in the [tutorial](https://www.kaggle.com/code/alexisbcook/titanic-tutorial/notebook).
+    - See `./nb/nb00.ipynb`
+    - Basic idea was based on the fact that "female" tends to alive rather than "male".
