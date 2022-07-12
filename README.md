@@ -53,3 +53,15 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 - Applied Random Forest Classifier as indicated in the [tutorial](https://www.kaggle.com/code/alexisbcook/titanic-tutorial/notebook).
     - See `./nb/nb00.ipynb`
     - Basic idea was based on the fact that "female" tends to alive rather than "male".
+    - Score: 0.77511
+
+### 20220713
+- Applied 2-layer MLP
+- Score: 0.77272
+    - Input feature was same as previous try `["Pclass", "Sex", "SibSp", "Parch"]`.
+    - Just concatenated each dummy vector to get 5-dimensional vector.
+- This simple design proved additional feature engineerings are required...
+
+:::note warn
+Debug for CUDA devise-side error which become clear due to lacking of sigmoid function before `nn.BCELoss()`.
+:::
