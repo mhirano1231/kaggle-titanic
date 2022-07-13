@@ -66,5 +66,5 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 >**Warning**
 >Debug for CUDA devise-side error which become clear due to lacking of sigmoid function before `nn.BCELoss()`.
 
->**Info**
+>**Note**
 >Additionally experimented 5-layer MLP but score was 0.77511 (the same as the first trial!). See `./nb/nb02.ipynb`.
