@@ -58,6 +58,7 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 ### 20220713
 - Applied 2-layer MLP
 - Score: 0.77272
+    - See `./nb/nb01.ipynb`
     - Input feature was same as previous try `["Pclass", "Sex", "SibSp", "Parch"]`.
     - Just concatenated each dummy vector to get 5-dimensional vector.
 - This simple design proved additional feature engineerings are required...
@@ -65,3 +66,5 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 >**Warning**
 >Debug for CUDA devise-side error which become clear due to lacking of sigmoid function before `nn.BCELoss()`.
 
+>**Info**
+>Additionally experimented 5-layer MLP but score was 0.77511 (the same as the first trial!). See `./nb/nb02.ipynb`.
