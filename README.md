@@ -68,3 +68,17 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 
 >**Note**
 >Additionally experimented 5-layer MLP but score was 0.77511 (the same as the first trial!). See `./nb/nb02.ipynb`.
+
+### 20220713 - 2
+- Conducting explanatory data analysis suggested by [this](https://atmarkit.itmedia.co.jp/ait/articles/2112/10/news043.html) article.
+- Calculated a cross correlation between each column.
+![corr_heat](./result/20220713_nb03/corr_heat.png)
+- This figure gave insights that `Sex` and `Fare` information have positive relationships with `Survived` as well as negative one with `Pclass`.
+
+
+## Idea list
+Summarizing assorted ideas here.
+- Split train/validation data to find best epoch
+    - this can also be used for getting optimal threshold for binary classification.
+- Ensembling several models
+- Explanatory Data Analysis (EDA)
