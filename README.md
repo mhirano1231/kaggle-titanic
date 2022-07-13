@@ -62,6 +62,6 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
     - Just concatenated each dummy vector to get 5-dimensional vector.
 - This simple design proved additional feature engineerings are required...
 
-:::note warn
-Debug for CUDA devise-side error which become clear due to lacking of sigmoid function before `nn.BCELoss()`.
-:::
+>**Warning**
+>Debug for CUDA devise-side error which become clear due to lacking of sigmoid function before `nn.BCELoss()`.
+
