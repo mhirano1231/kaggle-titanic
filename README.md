@@ -75,6 +75,12 @@ train.csvのデータで見つけたパターンを使って、（test.csvで見
 ![corr_heat](./result/20220713_nb03/corr_heat.png)
 - This figure gave insights that `Sex` and `Fare` information have positive relationships with `Survived` as well as negative one with `Pclass`.
 
+### 20220714
+- Submitted a new test estimate only based on `Sex` information
+- Scored 0.76555
+- This simple assumption came from the categorical plot between `Sex` and `Survived` in the `train.csv`.
+![cat_sex](./result/20220713_nb03/cat_sex.png)
+
 
 ## Idea list
 Summarizing assorted ideas here.
